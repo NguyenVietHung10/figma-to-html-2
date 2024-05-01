@@ -528,16 +528,14 @@ a {
 .blog__item {
   max-width: 270px;
   border-radius: 12px;
-  border: 1px solid #E8EBEE;
-  background: #FFFFFF;
+  border: 1px solid #e8ebee;
+  background: #ffffff;
 }
 
-.blog__item:hover{
+.blog__item:hover {
   box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
   border-color: transparent;
 }
-
-
 
 .blog-item__thumb {
   width: 270px;
@@ -564,14 +562,48 @@ a {
 }
 
 .blog-item__more {
-  color: #2E80CE;
+  color: #2e80ce;
   display: inline-block;
   margin: 12px 24px 21px 22px;
   font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.50;
+  line-height: 1.5;
 }
 
-.blog-item__more:hover{
-  color: #10375C;
+.blog-item__more:hover {
+  color: #10375c;
+}
+/* ==============main appointment================== */
+.appointment {
+  margin: 85px 0px;
+}
+
+.appointment__content {
+  padding: 100px 178px;
+  background: #f6fbff;
+  text-align: center;
+}
+
+.appointment__heading::after {
+  display: block;
+  background: #2E80CE;
+  content: "";
+  width: 136px;
+  height: 2px;
+  margin: 18px auto 0px;
+}
+
+.appointment__desc {
+  color: #575F66;
+  display: block;
+  margin: 18px auto 0px;
+  width: 617px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.appointment__btn{
+  margin-top: 38px;
 }
