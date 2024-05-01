@@ -16,6 +16,14 @@ body {
 }
 
 /* ==============common================== */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .container {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -575,7 +583,7 @@ a {
 }
 /* ==============main appointment================== */
 .appointment {
-  margin: 85px 0px;
+  margin-top: 85px;
 }
 
 .appointment__content {
@@ -586,7 +594,7 @@ a {
 
 .appointment__heading::after {
   display: block;
-  background: #2E80CE;
+  background: #2e80ce;
   content: "";
   width: 136px;
   height: 2px;
@@ -594,7 +602,7 @@ a {
 }
 
 .appointment__desc {
-  color: #575F66;
+  color: #575f66;
   display: block;
   margin: 18px auto 0px;
   width: 617px;
@@ -604,6 +612,126 @@ a {
   text-align: center;
 }
 
-.appointment__btn{
+.appointment__btn {
   margin-top: 38px;
+}
+/* ==============footer================== */
+.footer {
+  margin-top: 170px;
+  background: #10375c;
+  padding-top: 100px;
+  font-family: "Open Sans" sans-serif;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+
+.footer__desc {
+  margin-top: 21px;
+  width: 336px;
+  height: 56px;
+  color: #a9b3bb;
+}
+
+.footer__heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  color: #ffffff;
+}
+
+.footer__list {
+  margin: 20px 0px;
+}
+
+.footer__item {
+  margin: 20px 0px 10px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.73;
+}
+
+.footer__link {
+  color: #a9b3bb;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+  text-decoration-color: blue;
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 10px;
+  margin: 20px 0px 28px;
+}
+
+.footer-form {
+  margin-top: 10px;
+}
+
+.footer-form__input {
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+}
+
+.footer-form ::placeholder {
+  color: #9ca8b1;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.footer-form__submit {
+  width: 108px;
+  height: 46px;
+  border-radius: 4px;
+  background: #2e80ce;
+  color: #fff;
+  border: none;
+  margin-left: 12px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+  cursor: pointer;
+}
+
+.footer-form__submit:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.footer__right-text {
+ padding: 28px 0px 42px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+  text-align: center;
+  color: #aab3ba;
+}
+
+.footer__right-text:hover {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  cursor: pointer;
+}
+
+.footer__right::before {
+  margin-top: 28px;
+  display: block;
+  content: "";
+  width: 1170px;
+  height: 1px;
+  background: #406181;
 }
